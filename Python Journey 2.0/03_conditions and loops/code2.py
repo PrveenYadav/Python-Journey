@@ -1,5 +1,5 @@
 # Iterable tools
-# code in terminal
+# code in terminal these 3 lines
 file = open('code2.py')
 file.readline() 
 file.__next__()
