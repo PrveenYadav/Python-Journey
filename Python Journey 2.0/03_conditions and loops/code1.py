@@ -45,6 +45,12 @@ for i in my_str:
  
 print(reversed_str)
 
+# Another way to reverse string
+def reverseString(s):
+    return s[::-1]
+    # return s[-1:-(len(s)+1):-1]
+print(reverseString("Hello"))
+
 
 # Problem-5
 name = "teekter"
