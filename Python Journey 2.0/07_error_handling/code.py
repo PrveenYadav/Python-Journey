@@ -1,3 +1,4 @@
+# Error handling in Python
 '''
 Common Exception Types:
 ValueError: When a function receives an argument of correct type but inappropriate value
@@ -10,6 +11,19 @@ Exception: Catches all exceptions (use sparingly)
 '''
 
 
+file = open('new.txt', 'w')
+
+try:
+    file.write("Learning Error handling")
+finally:
+    file.close()
+
+# both syntax are doing same thing, and it depends on preference which syntax you choose
+with open('new.txt', 'w') as file:
+    file.write('Recently learning error handling in python')
+
+
+#Another Example
 try:
     with open("test.txt", "w") as file:
         content = file.write("Python Journey Ongoing")
