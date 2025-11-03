@@ -1,4 +1,4 @@
-# 
+# https://leetcode.com/problems/container-with-most-water/
 
 class Solution:
     def __init__(self):
@@ -15,8 +15,8 @@ class Solution:
                 ans = max(ans, currWater)
         return ans
     
-    # Two Pointer
-    def mostWater1(self, height): # O(n), O(1)
+    # Two Pointer : O(n), O(1)
+    def mostWater1(self, height):
         ans = 0
         i, j = 0, len(height)-1
 
